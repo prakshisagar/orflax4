@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Orflax</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            display: inline-block;
+            padding: 10px 0;
+        }
+        .logo img {
+            height: 50px;
+        }
+        nav {
+            float: right;
+            padding: 20px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .hero {
+            background-image: url('https://orflaxindia.com/wp-content/uploads/2023/03/Contact-Us.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-top: 70px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 30px;
+        }
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            height: 150px;
+        }
+        .submit-btn {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e67e22;
+        }
+        .contact-info h3 {
+            margin-top: 0;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .map-container {
+            margin-top: 30px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://orflaxindia.com/wp-content/uploads/2023/03/orflax-logo.png" alt="Orflax Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="directors.html">Directors</a>
+                <a href="products.html">Products</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Get in Touch</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <h3>Orflax India Pvt Ltd</h3>
+                    <p>123 Industrial Area, City Name</p>
+                    <p>State, Country - Zip Code</p>
+                    <p>Phone: +91 1234567890</p>
+                    <p>Email: info@orflaxindia.com</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.2233913121413!2d77.03245731440625!3d28.504285982472424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1663011817811!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Orflax India Pvt Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

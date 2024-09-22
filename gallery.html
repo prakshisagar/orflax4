@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Orflax</title>
+    <style>
+        /* Copy the entire style section from index.html here */
+        /* Add any additional styles specific to the gallery page */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Copy the header from index.html -->
+    </header>
+
+    <section class="hero" style="background-image: url('https://orflaxindia.com/wp-content/uploads/2023/03/Gallery.jpg');">
+        <div class="container">
+            <h1>Gallery</h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://orflaxindia.com/wp-content/uploads/2023/03/Gallery-1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src
